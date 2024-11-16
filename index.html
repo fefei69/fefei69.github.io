@@ -28,18 +28,18 @@
                   Prior to coming to UCSD, I completed my Bachelor’s degree in Mechanical and Electro-Mechanical Engineering (MEM) at National Sun Yat-sun University (NSYSU). 
                 </p>
                 <p>
-                  I am interested in high-performance control algorithms for agile generalist robot autonomy, which might involve Reinforcement Learning, Optimal Control, Planning, etc.
+                  I am interested in high-performance control algorithms for agile generalist robot autonomy, 
+                  which might involve efficient Reinforcement Learning, Optimal Control, Planning, etc.
                 </p>
                 <p style="text-align:center">
                   <a href="chw120@ucsd.edu">Email</a> &nbsp;/&nbsp;
                   <a href="data/JonBarron-CV.pdf">CV</a> &nbsp;/&nbsp;
-                  <a href="data/JonBarron-bio.txt">Bio</a> &nbsp;/&nbsp;
-                  <a href="https://scholar.google.com/citations?hl=en&user=jktWnL8AAAAJ">Scholar</a> &nbsp;/&nbsp;
-                  <a href="https://github.com/jonbarron/">Github</a>
+                  <a href="https://scholar.google.com/citations?user=0ONcGWMAAAAJ&hl=zh-TW">Scholar</a> &nbsp;/&nbsp;
+                  <a href="https://github.com/fefei69">Github</a>
                 </p>
               </td>
               <td style="padding:2.5%;width:40%;max-width:40%">
-                <a href="images/chungpang.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/chungpang.jpg" class="hoverZoomLink"></a>
+                <a href="images/chungpang.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/chungpang.jpg" class="hoverZoomLink"></a>
               </td>
             </tr>
           </tbody></table>
@@ -47,22 +47,20 @@
               <tr>
               <td style="padding:20px;width:100%;vertical-align:middle">
                 <h2>Research</h2>
-                <p>
-                  I'm interested in computer vision, deep learning, generative AI, and image processing. Most of my research is about inferring the physical world (shape, motion, color, light, etc) from images, usually with radiance fields. Some papers are <span class="highlight">highlighted</span>.
-                </p>
+                <p>&dagger; indicates equal contribution.</p>
               </td>
             </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-
+    <!-- ICRA 2025 paper -->
     <tr onmouseout="ever_stop()" onmouseover="ever_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
           <div class="two" id='ever_image'>
-					  <img src='images/ever_after.png' width=100%>
+					  <img src='images/medic2.gif' width="100%", height="95%">
 					</div>
-          <img src='images/ever_before.png' width=100%>
+          <img src='images/medic2_before.png' width="100%">
         </div>
         <script type="text/javascript">
           function ever_start() {
@@ -76,47 +74,134 @@
         </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://ever.github.io/">
-			<span class="papertitle">EVER: Exact Volumetric Ellipsoid Rendering for Real-time View Synthesis
+        <a href="https://arxiv.org/abs/2409.14287">
+			<span class="papertitle">MEDiC: Autonomous Surgical Robotic Assistance to Maximizing Exposure for Dissection and Cautery
 </span>
         </a>
         <br>
-				<a href="https://half-potato.gitlab.io/">Alexander Mai</a>, 
-				<a href="https://phogzone.com/">Peter Hedman</a>,
-				<a href="https://grgkopanas.github.io/">George Kopanas</a>,
-        <a href="https://dorverbin.github.io/">Dor Verbin</a>,
-        <a href="https://scholar.google.com/citations?user=ozNFrecAAAAJ&hl=en">David Futschik</a>,
-        <a href="https://xharlie.github.io/">Qiangeng Xu</a>,
-        <a href="https://jacobsschool.ucsd.edu/faculty/profile?id=253">Falko Kuester</a>,
-				<strong>Jonathan T. Barron</strong>,
-        <a href="https://www.zhangyinda.com/">Yinda Zhang</a>
+				<span>Xiao Liang</span>&dagger;,
+				<strong>Chung-Pang Wang</strong>&dagger;,
+				<span>Nikhil Uday Shinde</span>,
+        <span>Fei Liu</span>, 
+        <span>Florian Richter</span>,
+        <span>Michael Yip</span>
 				<br>
-        <em>arXiv</em>, 2024
+        <em>Under Review at ICRA</em>, 2025
         <br>
-        <a href="https://half-potato.gitlab.io/posts/ever/">project page</a>
+        <a href="https://drive.google.com/file/d/1jSlThIc-BFtqTttbpSzZ99UdgBnSgVj4/view?usp=sharing">Video</a>
         /
-        <a href="https://arxiv.org/abs/2410.01804">arXiv</a>
+        <a href="https://arxiv.org/abs/2409.14287">arXiv</a>
         <p></p>
         <p>
-				Raytracing constant-density ellipsoids yields more accurate and flexible radiance fields than splatting Gaussians, and still runs in real-time.
+          We propose a framework for autonomous surgical robotic assistance that integrates a differentiable physics model with perceptual feedback. Our approach achieves two key objectives: 
+          1 ) maximizing tissue exposure and applying tension at a specified dissection site using visual-servoing control, and 
+          2 ) selecting optimal control positions for the dissection target based on deformable Jacobian analysis. 
+          We validate our method through repeated real-robot experiments on a tissue phantom and demonstrate its capabilities in dissection experiments using shared autonomy on real animal tissue.
         </p>
+        
       </td>
     </tr>
 
-            <tr>
-              <td align="center" style="padding:20px;width:25%;vertical-align:middle">
-                <h2>Basically <br> Blog Posts</h2>
-              </td>
-              <td width="75%" valign="middle">
-                <a href="https://arxiv.org/abs/2112.11687">Squareplus: A Softplus-Like Algebraic Rectifier</a>
-                <br>
-                <a href="https://arxiv.org/abs/2010.09714">A Convenient Generalization of Schlick's Bias and Gain Functions</a>
-                <br>
-                <a href="https://arxiv.org/abs/1704.07483">Continuously Differentiable Exponential Linear Units</a>
-                <br>
-                <a href="https://jonbarron.info/data/cvpr2023_llm_workshop_annotated.pdf">Scholars & Big Models: How Can Academics Adapt?</a>
-              </td>
-            </tr>
+    <!-- Biomedicines paper  -->
+    <tr onmouseout="ever_stop()" onmouseover="ever_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <img src='images/ADpaper.png' width="100%">
+        </div>
+        <script type="text/javascript">
+          function ever_start() {
+            document.getElementById('ever_image').style.opacity = "1";
+          }
+
+          function ever_stop() {
+            document.getElementById('ever_image').style.opacity = "0";
+          }
+          ever_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://www.mdpi.com/2227-9059/11/10/2802">
+			<span class="papertitle">Analyzing Facial Asymmetry in Alzheimer’s Dementia Using Image-Based Technology
+</span>
+        </a>
+        <br>
+				<span>Ching-Fang Chien</span>&dagger;,
+				<span>Jia-Li Sung</span>&dagger;,
+				<strong>Chung-Pang Wang</strong>,
+        <span>Chen-Wen Yen</span>, 
+        <span>Yuan-Han Yang</span>,
+				<br>
+        <em>Biomedicines</em>, 2023
+        <br>
+        <a href="https://www.mdpi.com/2227-9059/11/10/2802">paper</a>
+        <p></p>
+        <p>
+          We developed a novel facial asymmetry measurements framework to detect Alzheimer’s dementia (AD), 
+          providing a non-invasive and cost-effective method for early AD diagnosis. 
+        </p>
+        
+      </td>
+    </tr>
+
+    <!-- Projects Block -->
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr>
+      <td style="padding:20px;width:100%;vertical-align:middle">
+        <h2>Projects</h2>
+      </td>
+      </tr>
+    </tbody></table>
+      
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>   
+      <!-- Projects -->
+      <!-- First Project -->
+      <tr>
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <div class="one">
+            <img src='images/paranoma.png' width="160">
+          </div>
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <span class="papertitle">Orientation Tracking with Queternion Optimization</span>
+          <br>
+          <em>University of California, San Diego</em>, 2024 &nbsp
+          <br>
+          <a href="data/Orientation_Tracking.pdf">project report</a>
+          /
+          <a href="https://github.com/fefei69/Orientation-Tracking-with-Queternion-Optimization">code</a>
+          <p></p>
+          <p>
+            Tracking camera orientation with IMU data. 
+            Formulated a optimization problem with queternions and use gradient descent algorithm (GD) to find optimal orientation sequences.
+            Subsequently, I utilize the optimal orientation to construct panoramic images by stitching images over time.<br>
+          </p>
+        </td>
+      </tr>
+
+      <!-- Second Project -->
+      <tr>
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <div class="one">
+            <img src='images/lidarslam.png' width="160">
+          </div>
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <span class="papertitle">LiDAR-Based SLAM</span>
+          <br>
+          <em>University of California, San Diego</em>, 2024 &nbsp
+          <br>
+          <a href="data/lidar_based_slam.pdf">project report</a>
+          /
+          <a href="https://github.com/fefei69/LiDAR-Based-SLAM">code</a>
+          <p></p>
+          <p>
+            SLAM using encoder and IMU odometry, 2-D LiDAR scans, and RGBD measurements from a differential-drive robot. Using the odometry
+            and LiDAR measurements to localize the robot and build a 2-D occupancy grid map of the environment.
+            Finally utilize the RGBD images to assign colors to the 2-D map of the floor.<br>
+          </p>
+        </td>
+      </tr>
+
             
             
           </tbody></table>
