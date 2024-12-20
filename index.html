@@ -184,7 +184,7 @@
       <tr>
         <td style="padding:20px;width:25%;vertical-align:middle">
           <div class="one">
-            <img src='images/lidarslam.png' width="100%">
+            <img src='images/lidar_cover.png' width="100%">
           </div>
         </td>
         <td style="padding:20px;width:75%;vertical-align:middle">
@@ -197,9 +197,35 @@
           <a href="https://github.com/fefei69/LiDAR-Based-SLAM">code</a>
           <p></p>
           <p>
-            SLAM using encoder and IMU odometry, 2-D LiDAR scans, and RGBD measurements from a differential-drive robot. Using the odometry
-            and LiDAR measurements to localize the robot and build a 2-D occupancy grid map of the environment.
-            Finally utilize the RGBD images to assign colors to the 2-D map of the floor.<br>
+            Implemented a lidar-based SLAM algorithm on a differential-drive robot by integrating multiple sensor inputs—wheel encoder and IMU odometry, 2-D LiDAR scans, and RGBD imagery. 
+            The robot’s position and orientation are estimated using odometry and LiDAR measurements, enabling the construction of a 2-D occupancy grid map that captures both free and occupied areas of the environment. 
+            Additionally, color information from the RGBD sensor is used to enrich the map, assigning realistic floor colors to the 2-D representation.<br>
+          </p>
+        </td>
+      </tr>
+
+
+      <!-- Visual-Inertial Slam -->
+      <tr>
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <div class="one">
+            <img src='images/visual_slam_data10.png' width="100%">
+          </div>
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <span class="papertitle">Visual-Inertial SLAM using EKF</span>
+          <br>
+          <em>University of California, San Diego</em>, 2024 &nbsp
+          <br>
+          <a href="data/Visual_Inertial_SLAM.pdf">project report</a>
+          /
+          <a href="https://github.com/fefei69/Visual-Inertial-SLAM">code</a>
+          <p></p>
+          <p>
+            Visual-Inertial SLAM using an Extended Kalman Filter (EKF). 
+            SLAM fuses data from an inertial measurement unit (IMU) and a stereo camera pair to accurately track the vehicle’s trajectory while simultaneously reconstructing a sparse 3D map of the environment. 
+            By combining the IMU’s motion predictions with stereo camera observations of visual landmarks, 
+            the EKF continuously refines estimates of both the vehicle’s pose and the map’s structure.<br>
           </p>
         </td>
       </tr>
@@ -230,7 +256,7 @@
           <a href="https://github.com/fefei69/Dynamic-Programming-for-Door-Key-Problem?tab=readme-ov-file">code</a>
           <p></p>
           <p>
-            Formulate Door & Key problem as a Deterministic Shortest Path problem and 
+            Formulate Door & Key problem as a Deterministic Shortest Path problem (DSP) and 
             solve it with Dynamic Programming algorithm by minimizing the cost of reaching the goal.<br>
           </p>
         </td>
@@ -253,7 +279,7 @@
           <a href="https://github.com/fefei69/Motion-Planning">code</a>
           <p></p>
           <p>
-            Search-based (A*) and sampling-based motion planning (RRT, RRT*, Bi-directional RRT) algorithms in 3-D Euclidean space. 
+            Implemented search-based (A*) and sampling-based motion planning (RRT, RRT*, Bi-directional RRT) algorithms in 3-D Euclidean space. 
             Test both search-based and sampling-based motion planning algorithms in 7 different environments with axis-aligned bounding boxes (AABBs) obstacles.<br>
           </p>
         </td>
