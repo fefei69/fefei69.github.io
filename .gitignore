@@ -1,3 +1,4 @@
 run_website.sh
-stylesheet.css
 .DS_Store
+docs/review-fixes.md
+/tests
