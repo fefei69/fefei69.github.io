@@ -133,3 +133,42 @@ h2 {
 span.highlight {
   background-color: #ffffd0;
 }
+
+/* Hover swap: the first image (e.g. a GIF) is always shown and keeps playing;
+   the overlay (.hover-swap-top) fades in on top of it while hovered. */
+.hover-swap {
+  position: relative;
+  display: block;
+  width: fit-content;
+}
+
+.hover-swap > img {
+  display: block;
+}
+
+.hover-swap-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .2s ease-in-out;
+}
+
+.hover-swap-top img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.hover-swap:hover .hover-swap-top {
+  opacity: 1;
+}

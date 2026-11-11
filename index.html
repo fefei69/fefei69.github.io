@@ -46,7 +46,7 @@
                   Chung-Pang Wang
                 </p>
                 <p>
-                  I am a Visiting Researcher and an incoming PhD student in the <a href="https://sites.google.com/view/riviere-robot-lab/home?authuser=0">Riviere Robot Lab</a> at New York University (NYU), advised by <b>Prof. Benjamin Riviere</b>.
+                  I am a PhD student in the <a href="https://sites.google.com/view/riviere-robot-lab/home?authuser=0">Riviere Robot Lab</a> at New York University (NYU), advised by <b>Prof. Benjamin Riviere</b>.
                 </p>
                 <p>
                   I completed my M.S. in ECE at UC San Diego, where I worked with <b>Prof. Michael Yip</b> in <a href="https://ucsdarclab.com/">Advanced Robotics and Controls Lab (ARCLab)</a>. 
@@ -72,13 +72,42 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
               <tr>
               <td style="padding:20px;width:100%;vertical-align:middle">
-                <h2>Publications</h2>
+                <h2>Selected Publications</h2>
                 <p>&dagger; indicates equal contribution.</p>
               </td>
             </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     
+     <!-- VQ-WM paper -->
+    <tr>
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="hover-swap">
+          <img src="images/play_episode2_CCCC_to_ABBC_10x.gif" width="200" alt="Robot solving Tower of Hanoi with the vector-quantized world model" loading="lazy" decoding="async">
+          <div class="hover-swap-top">
+            <img src="images/vqwm_motivation_fig.png" alt="VQ-WM motivation figure: planning in a vector-quantized latent space with visual feedback control on a Tower of Hanoi task" loading="lazy" decoding="async">
+          </div>
+        </div>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://arxiv.org/abs/2610.25600">
+          <span class="papertitle">Vector-Quantized World Model: Latent Feedback Motion Planning for Robot Manipulation
+          </span>
+        </a>
+        <br>
+        <span>Xuezhou Xu</span>&dagger;,
+        <strong>Chung-Pang Wang</strong>&dagger;,
+        <span>Zhenzhen Li</span>,
+        <span>Benjamin Riviere</span>
+        <br>
+        <em>Under submission</em>, 2026<br>
+        <a href="https://arxiv.org/abs/2610.25600">arXiv</a>
+        <p>
+          We propose a vector-quantized world model (VQ-WM) that pairs a discrete latent predictor for long-horizon search with a continuous visual-feedback controller for robot manipulation.
+        </p>
+
+      </td>
+    </tr>
      <!-- ICRA 2026 paper -->
     <tr>
       <td style="padding:20px;width:25%;vertical-align:middle">
@@ -138,35 +167,6 @@
       </td>
     </tr>
 
-    <!-- Biomedicines paper  -->
-    <tr>
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-          <img src="images/ADpaper.png" width="100%" alt="Facial asymmetry analysis paper preview" loading="lazy" decoding="async">
-        </div>
-      </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://www.mdpi.com/2227-9059/11/10/2802">
-			<span class="papertitle">Analyzing Facial Asymmetry in Alzheimer’s Dementia Using Image-Based Technology
-</span>
-        </a>
-        <br>
-				<span>Ching-Fang Chien</span>&dagger;,
-				<span>Jia-Li Sung</span>&dagger;,
-				<strong>Chung-Pang Wang</strong>,
-        <span>Chen-Wen Yen</span>, 
-        <span>Yuan-Han Yang</span>,
-				<br>
-        <em>Biomedicines</em>, 2023
-        <br>
-        <a href="https://www.mdpi.com/2227-9059/11/10/2802">paper</a>
-        <p>
-          We developed a novel facial asymmetry measurements framework to detect Alzheimer’s dementia (AD), 
-          providing a non-invasive and cost-effective method for early AD diagnosis. 
-        </p>
-        
-      </td>
-    </tr>
     </tbody></table>
 
     <!-- Projects Block -->
@@ -188,7 +188,7 @@
           </div>
         </td>
         <td style="padding:20px;width:75%;vertical-align:middle">
-          <span class="papertitle">Orientation Tracking with Queternion Optimization</span>
+          <span class="papertitle">Orientation Tracking with Quaternion Optimization</span>
           <br>
           <em>University of California, San Diego</em>, 2024 &nbsp;
           <br>
@@ -197,7 +197,7 @@
           <a href="https://github.com/fefei69/Orientation-Tracking-with-Queternion-Optimization">code</a>
           <p>
             Tracking camera orientation with IMU data. 
-            Formulated a optimization problem with queternions and use gradient descent algorithm (GD) to find optimal orientation sequences.
+            Formulated an optimization problem with quaternions and use gradient descent algorithm (GD) to find optimal orientation sequences.
             Subsequently, I utilize the optimal orientation to construct panoramic images by stitching images over time.<br>
           </p>
         </td>
@@ -307,9 +307,7 @@
         <br>
         <em>University of California, San Diego</em>, 2024 &nbsp;
         <br>
-        <!-- <a href="https://github.com/fefei69/Vision-based-Bicycle-Rearview-Hazard-Warning-System">project report</a>
-        / -->
-        <a href="https://github.com/fefei69/Vision-based-Bicycle-Rearview-Hazard-Warning-System">code</a>
+        <a href="https://github.com/fefei69/Infinite-Horizon-Stochastic-Optimal-Control">code</a>
         <p>
           Developed a safe trajectory tracking algorithm for a ground differential-drive robot by formulating a discounted infinite-horizon stochastic optimal control problem. 
           Solved the problem using both certainty equivalent control (CEC) and generalized policy iteration (GPI). <br>
@@ -329,7 +327,6 @@
         <br>
         <em>University of California, San Diego</em>, 2024 &nbsp;
         <br>
-        <a href="https://github.com/fefei69/Vision-based-Bicycle-Rearview-Hazard-Warning-System">code</a>
         <p>
           Designed and built a Panda robot billiards environment in ManiSkill, and trained a state-based reinforcement learning agent with PPO.<br>
         </p>
@@ -379,7 +376,7 @@
         /
         <a href="https://github.com/fefei69/Enhancing-Keypoint-Detection-with-Attention-Mechanism">code</a> -->
         <p>
-          Trained an apart-based SE(3)-equivariant neural network, to estimate Panda Arm’s pose from point cloud inputs. 
+          Trained a part-based SE(3)-equivariant neural network, to estimate Panda Arm’s pose from point cloud inputs. 
           Aimed to enable data-efficient transfer of motion tasks between robotic arms.
           <br>
         </p>
@@ -443,12 +440,10 @@
           <br>
           <em>National Sun Yat-sen University</em>, 2021 &nbsp;
           <br>
-          <a href="https://github.com/fefei69/Vision-based-Bicycle-Rearview-Hazard-Warning-System">project report</a>
-          /
           <a href="https://github.com/fefei69/Vision-based-Bicycle-Rearview-Hazard-Warning-System">code</a>
           <p>
             A Visual hazard detection system for cyclist safety. 
-            Intergrated Yolov4-tiny and DeepSort to track vehicles behind and predict potential hazards for cyclists. <br>
+            Integrated Yolov4-tiny and DeepSort to track vehicles behind and predict potential hazards for cyclists. <br>
           </p>
         </td>
       </tr>
